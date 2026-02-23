@@ -2,39 +2,153 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detoxain | Detailing Premium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         :root {
-            --rojo-principal: #DC2626;
-            --rojo-oscuro: #991B1B;
-            --rojo-claro: #EF4444;
+            --rojo-principal: #E10600;
             --negro: #0A0A0A;
-            --negro-soft: #171717;
-            --gris: #262626;
+            --gris: #1C1C1C;
             --blanco: #FFFFFF;
-            --blanco-soft: #F5F5F5;
-            --gradient-rojo: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background-color: var(--negro);
             color: var(--blanco);
-            overflow-x: hidden;
         }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--negro); }
-        ::-webkit-scrollbar-thumb { background: var(--rojo-principal); border-radius: 4px; }
-        
+
         nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: rgba(0,0,0,0.6);
             position: fixed;
-            top: 0;
             width: 100%;
-            padding: 1rem 5%;
+            top: 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--blanco);
+        }
+
+        .logo span {
+            color: var(--rojo-principal);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #0A0A0A, #1C1C1C);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: var(--rojo-principal);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #ccc;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--rojo-principal);
+            color: var(--blanco);
+        }
+
+        .btn-primary:hover {
+            background: #ff1a1a;
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--rojo-principal);
+            color: var(--rojo-principal);
+        }
+
+        .btn-secondary:hover {
+            background: var(--rojo-principal);
+            color: var(--blanco);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gris);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#" class="logo">Detox<span>ain</span></a>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Protección total para tu <span class="highlight">Vehículo</span></h1>
+        <p>Restauración, sellado y protección profesional para que tu auto luzca impecable.</p>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-primary">Reservar turno</a>
+            <a href="#" class="btn btn-secondary">Ver servicios</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Detoxain Detailing Premium. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>            padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
