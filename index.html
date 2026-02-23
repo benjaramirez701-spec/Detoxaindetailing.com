@@ -1,40 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detoxain | Detailing Premium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --rojo-principal: #DC2626;
-            --rojo-oscuro: #991B1B;
-            --rojo-claro: #EF4444;
-            --negro: #0A0A0A;
-            --negro-soft: #171717;
-            --gris: #262626;
-            --blanco: #FFFFFF;
-            --blanco-soft: #F5F5F5;
-            --gradient-rojo: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--negro);
-            color: var(--blanco);
-            overflow-x: hidden;
-        }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--negro); }
-        ::-webkit-scrollbar-thumb { background: var(--rojo-principal); border-radius: 4px; }
-        
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 1rem 5%;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detoxain | Detailing Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0a0a0a;
+    color:#ffffff;
+    font-family:'Montserrat', sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    padding:30px 0;
+    text-align:center;
+}
+
+.logo{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    letter-spacing:3px;
+}
+
+.logo span{
+    color:#8b0000;
+}
+
+.hero{
+    height:85vh;
+    background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+    url('suran-gonza.jpg') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-weight:300;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:14px 32px;
+    border:1px solid #8b0000;
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:#8b0000;
+}
+
+.section{
+    padding:100px 0;
+}
+
+.section h2{
+    font-family:'Playfair Display', serif;
+    font-size:36px;
+    margin-bottom:60px;
+    text-align:center;
+}
+
+.pack-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+.pack{
+    border:1px solid #222;
+    padding:40px;
+    background:#111;
+    transition:0.4s;
+}
+
+.pack:hover{
+    border:1px solid #8b0000;
+}
+
+.pack h3{
+    font-family:'Playfair Display', serif;
+    margin-bottom:20px;
+}
+
+.pack ul{
+    list-style:none;
+}
+
+.pack ul li{
+    margin-bottom:12px;
+    font-weight:300;
+}
+
+.proximamente{
+    margin-top:40px;
+    text-align:center;
+    font-style:italic;
+    color:#888;
+}
+
+.testimonio{
+    background:#111;
+    padding:60px;
+    text-align:center;
+}
+
+.testimonio img{
+    width:100%;
+    max-width:500px;
+    margin-bottom:30px;
+}
+
+.testimonio p{
+    font-style:italic;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+footer{
+    padding:40px 0;
+    text-align:center;
+    border-top:1px solid #222;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header class="container">
+    <div class="logo">DETOX<span>AIN</span></div>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Purify & Clarity</h1>
+        <p>Detalle automotriz premium en José Mármol y alrededores.</p>
+        <a class="btn" href="https://wa.me/5491155077641?text=Hola%21%20Me%20interesa%20el%20Pack%20Clarity">
+            Consultar Pack Clarity
+        </a>
+    </div>
+</section>
+
+<section class="section container">
+    <h2>Nuestros Packs</h2>
+
+    <div class="pack-grid">
+
+        <div class="pack">
+            <h3>Pack Purify</h3>
+            <ul>
+                <li>Lavado Detail Exterior Completo</li>
+                <li>Detallado de Interiores Básico</li>
+                <li>Encerado Natural / Cera Líquida</li>
+            </ul>
+        </div>
+
+        <div class="pack">
+            <h3>Pack Clarity</h3>
+            <ul>
+                <li>Lavado Detail Exterior + Descontaminado</li>
+                <li>Abrillantado Exterior</li>
+                <li>Detallado de Interiores Básico</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="proximamente">
+        Próximamente: Tratamientos cerámicos y limpieza de interiores full.
+    </div>
+</section>
+
+<section class="testimonio">
+    <img src="suran-gonza.jpg" alt="VW Suran Gonza">
+    <p>
+    "Quedó impecable, se nota que le metiste por todos lados, cubriste todo.
+    Te felicito, la verdad que trabajás muy muy bien. Agradecido con vos."
+    </p>
+    <strong>— Gonza (VW Suran)</strong>
+</section>
+
+<footer>
+    José Mármol y alrededores | WhatsApp 11 5507 7641
+</footer>
+
+</body>
+</html>            padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
